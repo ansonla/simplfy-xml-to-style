@@ -7,5 +7,13 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Nugget",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ansonla/simplfy-xml-to-style.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ansonla/simplfy-xml-to-style/issues"
+  },
+  "homepage": "https://github.com/ansonla/simplfy-xml-to-style"
 }
