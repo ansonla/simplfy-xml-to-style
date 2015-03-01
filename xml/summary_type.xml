@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/event_details_short_summary_margin">
+
+    <View
+        android:id="@+id/yellowcard"
+        android:background="@drawable/yellow_card"
+        android:layout_width="10dp"
+        android:layout_height="15dp"
+        android:layout_marginTop="@dimen/event_details_short_summary_margin"
+        android:layout_centerHorizontal="true"/>
+
+    <View
+        android:id="@+id/redcard"
+        android:background="@drawable/red_card"
+        android:layout_width="10dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/yellowcard"
+        android:layout_marginTop="@dimen/event_details_short_summary_margin"
+        android:layout_centerHorizontal="true"/>
+
+    <ImageView
+        android:id="@+id/swap"
+        android:src="@drawable/swaps"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/redcard"
+        android:layout_marginTop="@dimen/event_details_short_summary_margin"/>
+
+    <ImageView
+        android:id="@+id/corner"
+        android:src="@drawable/corner"
+        android:layout_width="15dp"
+        android:layout_height="15dp"
+        android:layout_below="@id/swap"
+        android:layout_marginTop="@dimen/event_details_short_summary_margin"
+        android:layout_centerHorizontal="true"/>
+
+</RelativeLayout>

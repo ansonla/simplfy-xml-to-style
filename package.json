@@ -1,0 +1,11 @@
+{
+  "name": "simplfy-xml-style",
+  "version": "0.0.0",
+  "description": "Find duplicated xml and replace it with style.xml (will be created after analyising the xmls)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Nugget",
+  "license": "ISC"
+}

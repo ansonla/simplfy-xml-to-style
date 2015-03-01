@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white">
+
+    <TextView
+        android:id="@+id/rank_label"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="#"
+        android:textColor="@color/darkGray"
+        android:fontFamily="sans-serif-light"/>
+
+    <TextView
+        android:id="@+id/name_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:gravity="left|center"
+        android:layout_toRightOf="@id/rank_label"
+        android:text="NAME"
+        android:textColor="@color/darkGray"
+        android:fontFamily="sans-serif-light"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginRight="8dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentEnd="true">
+
+        <TextView
+            android:id="@+id/yc_label"
+            style="@style/TeamStatsLabel"
+            android:text="YC"/>
+
+        <TextView
+            android:id="@+id/rc_label"
+            style="@style/TeamStatsLabel"
+            android:text="RC"/>
+
+        <TextView
+            android:id="@+id/total_label"
+            style="@style/TeamStatsLabel"
+            android:text="Total"/>
+    </LinearLayout>
+
+    <include layout="@layout/divider_table"/>
+</RelativeLayout>

@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/darkGray">
+
+    <TextView
+        android:id="@+id/shirt_label"
+        android:layout_width="25dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:text="#"
+        android:textSize="14sp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/team_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/shirt_label"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp"
+        android:text="TEAM"
+        android:textSize="14sp"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="16dp">
+
+        <TextView
+            android:id="@+id/appearence_label"
+            android:layout_width="30dp"
+            android:text="APP"
+            style="@style/PositionLabel.Header"/>
+
+        <TextView
+            android:id="@+id/goals_label"
+            android:layout_width="30dp"
+            android:text="G"
+            style="@style/PositionLabel.Header"/>
+
+        <TextView
+            android:id="@+id/assists_label"
+            android:layout_width="30dp"
+            android:text="A"
+            style="@style/PositionLabel.Header"/>
+
+        <TextView
+            android:id="@+id/rc_label"
+            android:layout_width="30dp"
+            android:text="RC"
+            style="@style/PositionLabel.Header"/>
+
+        <TextView
+            android:id="@+id/yc_label"
+            android:layout_width="30dp"
+            android:text="YC"
+            style="@style/PositionLabel.Header"/>
+
+    </LinearLayout>
+
+
+    <!--<include layout="@layout/divider_table"/>-->
+</RelativeLayout>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/temp_background"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:background="@color/darkGray">
+
+    <include layout="@layout/toolbar_default"
+        android:id="@+id/toolbar_actionbar"/>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/player_stats"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:paddingTop="8dp"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:weightSum="1">
+
+            <include layout="@layout/item_player_stats"
+                android:id="@+id/dob_stats"/>
+            <include layout="@layout/item_player_stats"
+                android:id="@+id/height_stats"/>
+            <include layout="@layout/item_player_stats"
+                android:id="@+id/weight_stats"/>
+            <include layout="@layout/item_player_stats"
+                android:id="@+id/nationality_stats"/>
+
+        </LinearLayout>
+
+        <com.astuetz.PagerSlidingTabStrip
+            android:id="@+id/tab_strip"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            app:pstsIndicatorColor="@color/orange"
+            app:pstsShouldExpand="true"
+            app:pstsDividerColor="@android:color/transparent"
+            app:pstsIndicatorHeight="2dp"
+            android:layout_below="@id/header"/>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <android.support.v4.view.ViewPager
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/view_pager"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:background="@color/SuperLightGray"/>
+    </RelativeLayout>
+
+</LinearLayout>
